@@ -1,23 +1,42 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <transition name="fade" mode="out-in" :duration="100">
+      <router-view class="page"></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  mounted () {
+    let globalLoading = document.getElementById('globalLoading')
+    let app = document.getElementById('app')
+    globalLoading.style.display = 'none'
+    app.style.display = 'block'
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    height: 100%;
+  }
+
+  .page {
+    min-height: 100%;
+  }
+
+  .page {
+    margin: 0 auto;
+    max-width: 750px;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s ease;
+  }
+
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
 </style>

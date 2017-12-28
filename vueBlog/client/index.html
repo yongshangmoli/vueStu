@@ -3,10 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>client</title>
+    <title></title>
+    <style>
+      #globalLoading {
+          margin-top: .3rem;
+          text-align: center;
+          font-size: .28rem;
+          color: #aaa;
+      }
+    </style>
+    <script>
+      !(function (win, doc) {
+        win.onerror = function (msg, url, line) {
+          url = url || win.location.href;
+          let errMsg = '抱歉，页面出错了' + '\r\n' + msg + '\r\n' + url + '\r\nLine:' + line;
+          alert(errMsg);
+        };
+      }(window, document));
+    </script>
+    <!-- <script>
+      !(function (win, doc) {
+        if (!win.addEventListener) {
+          return;
+        }
+        let setFontSize = function () {
+          let maxWidth = 750;
+          let cliWidth = Math.min(doc.documentElement.clientWidth, maxWidth);
+          doc.documentElement.style.fontSize = 100 * (cliWidth / maxWidth) + 'px';
+        };
+        win.addEventListener('resize', setFontSize, false);
+        setFontSize();
+      })(window, document);
+    </script> -->
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="globalLoading">资源加载中，请稍候...</div>
+    <div id="app" style="display: none;"></div>
   </body>
 </html>
