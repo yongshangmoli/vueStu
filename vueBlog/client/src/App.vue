@@ -21,15 +21,17 @@ export default {
 <style>
   #app {
     height: 100%;
+    background: #495060;
   }
 
   .page {
+    height: 100%;
     min-height: 100%;
   }
 
   .page {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 980px;
   }
 
   .fade-enter-active, .fade-leave-active {
