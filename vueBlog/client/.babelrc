@@ -12,7 +12,7 @@
     "transform-vue-jsx",
     "transform-runtime",
     ["import", {
-      "libraryName": ["tweui", "iview"],
+      "libraryName": ["tweui", "iview", "bootstrap-vue"],
       "libraryDirectory": "src/components"
     }]
   ],

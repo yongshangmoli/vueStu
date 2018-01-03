@@ -1,4 +1,9 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title></title><style>#globalLoading {
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title></title><style>html, body {
+        height: 100%;
+        min-height: 100%;
+        background: #495060;
+      }
+      #globalLoading {
           margin-top: .3rem;
           text-align: center;
           font-size: .28rem;
@@ -9,15 +14,4 @@
           let errMsg = '抱歉，页面出错了' + '\r\n' + msg + '\r\n' + url + '\r\nLine:' + line;
           alert(errMsg);
         };
-      }(window, document));</script><script>!(function (win, doc) {
-        if (!win.addEventListener) {
-          return;
-        }
-        let setFontSize = function () {
-          let maxWidth = 750;
-          let cliWidth = Math.min(doc.documentElement.clientWidth, maxWidth);
-          doc.documentElement.style.fontSize = 100 * (cliWidth / maxWidth) + 'px';
-        };
-        win.addEventListener('resize', setFontSize, false);
-        setFontSize();
-      })(window, document);</script><link href=/static/css/app.5f74424fa225e774dd6ddc12f94d6c2c.css rel=stylesheet></head><body><div id=globalLoading>资源加载中，请稍候...</div><div id=app style="display: none;"></div><script type=text/javascript src=/static/js/manifest.e574edc38bf809b999ea.js></script><script type=text/javascript src=/static/js/vendor.5973cf24864eecc78c48.js></script><script type=text/javascript src=/static/js/app.efc5a8ed73fbaf4de7b8.js></script></body></html>
+      }(window, document));</script><link href=/static/css/app.f6491dce06e6c015133c489a1b0d69be.css rel=stylesheet></head><body><div id=globalLoading>资源加载中，请稍候...</div><div id=app style="display: none;"></div><script type=text/javascript src=/static/js/manifest.2d7d29f3ca4b0909a0b2.js></script><script type=text/javascript src=/static/js/vendor.c499ea83fb438ea0c727.js></script><script type=text/javascript src=/static/js/app.1247637574e5647d94ba.js></script></body></html>

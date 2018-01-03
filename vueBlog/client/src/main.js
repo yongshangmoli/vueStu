@@ -4,10 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import iView from 'iview'
+import BootstrapVue from 'bootstrap-vue'
 import '@/components/iview/iview.css'
+import '@/components/bootstrap/bootstrap.css'
+import '@/components/bootstrap/bootstrap-vue.css'
 
 Vue.config.productionTip = false
 Vue.use(iView)
+Vue.use(BootstrapVue)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
