@@ -1,0 +1,2 @@
+webpackJsonp([2],{HNXx:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a={name:"bodyView",components:{"b-button":n("E8q/").a}},r={render:function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[e._v("\n  正文1\n  "),n("b-button",[e._v("I am a Button")]),e._v(" "),n("b-button",{attrs:{href:"#"}},[e._v("I am a Link")])],1)},staticRenderFns:[]},u=n("VU/8")(a,r,!1,null,null,null);t.default=u.exports}});
+//# sourceMappingURL=2.c6f54c08cb28d55688b4.js.map
